@@ -1,11 +1,14 @@
 import unittest
 from personal.identity.salary import net_annual_salary
 
-@classmethod 
-def setUpClass(cls): 
-    print('setupClass')
+
 
 class TestNetSalary(unittest.TestCase):
+    @classmethod 
+   
+    def setUpClass(cls): 
+        print('setupClass')
+   
     def setUp(self):
         print('Set Up')
     
@@ -20,6 +23,6 @@ class TestNetSalary(unittest.TestCase):
     def tearDown(self):
         print('Tear Down') 
 
-@classmethod 
-def tearDownClass(cls): 
-    print('teardownClass')          
+    @classmethod 
+    def tearDownClass(cls): 
+        print('teardownClass')         
