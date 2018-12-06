@@ -8,3 +8,8 @@ script:
   - python TestModule2.py
   - python TestModule3.py
   - python TestModule4.py
+  
+branches:
+ only:
+ - master
+ - MarziLine
