@@ -6,5 +6,5 @@
 
 #measure.py
 def calc(weight, height):
-    BMI = float((weight) / (height * height))
+    BMI = int((weight) / (height * height))
     return BMI
