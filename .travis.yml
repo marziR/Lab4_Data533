@@ -1,14 +1,10 @@
 language: python
 python:
-  - "3.5"
+  - "3.6"
 # command to run tests
 script:
-  - python testmodules\TestModule1.py
-  - python testmodules\TestModule2.py
-  - python testmodules\TestModule3.py
-  - python testmodules\TestModule4.py
+  - TestModule1.py
+  - TestModule2.py
+  - TestModule3.py
+  - TestModule4.py
   
-branches:
- only:
- - gh-pages
- - /.*/
