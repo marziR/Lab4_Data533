@@ -10,8 +10,8 @@ class TestNetSalary(unittest.TestCase):
         print('Set Up')
     
     def test_net_annual(self):
-        self.assertEqual(net_annual_salary(30,20),21840)
-        self.assertEqual(net_annual_salary(40,32),39936)
+        self.assertEqual(net_annual_salary(35,'b'),'both entries should be integer types')
+        self.assertEqual(net_annual_salary(170,32),'a week has only 168 hrs!')
         self.assertEqual(net_annual_salary(20,15),10920)
         self.assertEqual(net_annual_salary(10,20),7280)
         self.assertEqual(net_annual_salary(50,10),18200)

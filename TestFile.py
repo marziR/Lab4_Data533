@@ -1,8 +1,8 @@
 import unittest 
-from testmodules.TestModule1 import TestCalc 
-from testmodules.TestModule2 import TestBmiCat
-from testmodules.TestModule3 import TestNetSalary
-from testmodules.TestModule4 import TestAgeCalc
+from TestModule1 import TestCalc 
+from TestModule2 import TestBmiCat
+from TestModule3 import TestNetSalary
+from TestModule4 import TestAgeCalc
 
 
 def my_suite(): 

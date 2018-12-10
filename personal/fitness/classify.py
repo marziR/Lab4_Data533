@@ -1,11 +1,4 @@
 
-# coding: utf-8
-
-# In[1]:
-
-
-#classify.py
-
 def bmicat(BMI):
 
     if (BMI < 18.5):

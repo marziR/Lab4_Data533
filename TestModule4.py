@@ -10,11 +10,11 @@ class TestAgeCalc(unittest.TestCase):
         print('Set Up')
     
     def test_agecalc(self):
-        self.assertEqual(calculate_age('1925-08-12'),93)
+        self.assertEqual(calculate_age('2016-12-2'),'DOB must be a string of this format: YYYY-MM-DD')
         self.assertEqual(calculate_age('1987-12-30'),30 )
-        self.assertEqual(calculate_age('1954-03-25'),64)
+        self.assertEqual(calculate_age('2016-14-03'),'Month number cant be larger than 12')
         self.assertEqual(calculate_age('1963-02-08'),55)
-        self.assertEqual(calculate_age('1923-05-25'),95)
+        self.assertEqual(calculate_age('2016-05-34'),'Day number cant be larger than 31')
         self.assertEqual(calculate_age('2016-08-08'),2 )
     def tearDown(self):
         print('Tear Down')  

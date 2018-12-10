@@ -12,12 +12,12 @@ class TestBmiCat(unittest.TestCase):
     
 
     def test_bmicat(self):
-        self.assertEqual(bmicat(16),'UNDERWEIGHT')
-        self.assertEqual(bmicat(19),'HEALTHY')
-        self.assertEqual(bmicat(22),'HEALTHY')
-        self.assertEqual(bmicat(36),'MORBIDLY OBESE')
-        self.assertEqual(bmicat(31),'OBESE')
-        self.assertEqual(bmicat(40),'MORBIDLY OBESE')
+        self.assertEqual(bmicat(16),'Underweight')
+        self.assertEqual(bmicat(19),'Healthy')
+        self.assertEqual(bmicat(22),'Healthy')
+        self.assertEqual(bmicat(26),'Overweight')
+        self.assertEqual(bmicat(31),'Obese')
+        self.assertEqual(bmicat(40),'Morbidly Obese')
     
     def tearDown(self):
         print('Tear Down')     
