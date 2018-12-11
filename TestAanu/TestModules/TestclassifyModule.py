@@ -5,10 +5,16 @@
 
 
 import unittest
-from classify import bmicat
+from personal.fitness.classify import bmicat
 
 
 class TestBmicat(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        print('setupClass')
+
+    def setUp(self):
+        print('Set Up')
 
     def test_bmicat(self):
         self.assertEqual(bmicat(16), 'Underweight')
@@ -17,4 +23,10 @@ class TestBmicat(unittest.TestCase):
         self.assertEqual(bmicat(33), 'Obese')
         self.assertEqual(bmicat(52), 'Morbidly Obese')
 
-unittest.main()
+    def tearDown(self):
+        print('Tear Down')
+
+    @classmethod
+    def tearDownClass(cls):
+        print('teardownClass')
+unittest.main(argv=[''], verbosity=2, exit=False)

@@ -5,11 +5,16 @@
 
 
 import unittest
-from age import calculate_age
+from personal.identity.age import calculate_age
 
 
 class TestAgeCalc(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        print('setupClass')
 
+    def setUp(self):
+        print('Set Up')
 
     def test_agecalc(self):
         self.assertEqual(calculate_age('1937-11-11'),81)
@@ -18,4 +23,10 @@ class TestAgeCalc(unittest.TestCase):
         self.assertEqual(calculate_age('1989-08-04'),29)
         self.assertEqual(calculate_age('2001-07-07'),17)
 
-unittest.main()
+    def tearDown(self):
+        print('Tear Down')
+
+    @classmethod
+    def tearDownClass(cls):
+        print('teardownClass')
+unittest.main(argv=[''], verbosity=2, exit=False) 
