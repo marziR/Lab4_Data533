@@ -4,4 +4,4 @@
 
 
 
-try error added for three modules of:age,salary and bmi calculation
+try error added for three modules of:identify.age, identify.salary and fitness.classify
