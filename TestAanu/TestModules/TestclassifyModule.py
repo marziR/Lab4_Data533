@@ -24,7 +24,7 @@ class TestBmicat(unittest.TestCase):
         self.assertEqual(bmicat(52), 'Morbidly Obese')
         self.assertEqual(bmicat(0), 'Invalid BMI')
         self.assertEqual(bmicat('k'), 'Invalid Data Type')
-        self.assertEqual(bmicat('bmi'), 'Invalid Data Type')
+        self.assertEqual(bmicat('my bmi is 34'), 'Invalid Data Type')
 
     def tearDown(self):
         print('Tear Down')

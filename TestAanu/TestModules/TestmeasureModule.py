@@ -25,6 +25,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc(81,6.0),'Value invalid!')
         self.assertEqual(calc(0,1.5),'Value invalid!')
         self.assertEqual(calc(56,0),'Cannot divide by 0')
+        self.assertEqual(calc(56,-1),'Cannot divide by 0')
 
     def tearDown(self):
         print('Tear Down')
