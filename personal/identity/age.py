@@ -18,6 +18,4 @@ def calculate_age(DOB):
             return age
 
     except ValueError:
-        print('Invalid Date!')
-
-    
+        return 'Invalid Date!'

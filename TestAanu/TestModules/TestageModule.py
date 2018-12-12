@@ -22,6 +22,8 @@ class TestAgeCalc(unittest.TestCase):
         self.assertEqual(calculate_age('1976-01-25'),42)
         self.assertEqual(calculate_age('1989-08-04'),29)
         self.assertEqual(calculate_age('2001-07-07'),17)
+        self.assertEqual(calculate_age('2020-01-23'),'Invalid Date!')
+        self.assertEqual(calculate_age('2008-15-20'),'Invalid Date!')
 
     def tearDown(self):
         print('Tear Down')
@@ -29,4 +31,4 @@ class TestAgeCalc(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         print('teardownClass')
-unittest.main(argv=[''], verbosity=2, exit=False) 
+unittest.main(argv=[''], verbosity=2, exit=False)

@@ -22,6 +22,8 @@ class TestNetSalary(unittest.TestCase):
         self.assertEqual(net_annual_salary(40,120),149760)
         self.assertEqual(net_annual_salary(60,32),59904)
         self.assertEqual(net_annual_salary(20,13),9464)
+        self.assertEqual(net_annual_salary(80,11),'Below minimum wage!')
+        self.assertEqual(net_annual_salary('hr',15),'Invalid Data Type')
 
     def tearDown(self):
         print('Tear Down')

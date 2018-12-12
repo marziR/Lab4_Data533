@@ -13,6 +13,6 @@ def net_annual_salary(hrsperweek,payperhr):
             return (round(gross*0.6))
 
     except ValueError:
-        print('Below minimum wage!')
+        return 'Below minimum wage!'
     except TypeError:
-        print('Invalid Data Type')
+        return 'Invalid Data Type'

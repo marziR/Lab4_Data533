@@ -7,13 +7,13 @@ def calc(weight, height):
         BMI = float((weight) / (height * height))
         if weight <= 0:
             raise ValueError
-        if height > 3:
+        elif height > 3:
             raise ValueError
-        if height <= 0:
+        elif height <= 0:
             raise ZeroDivisionError
-        else:
-            return (round(BMI,1))
     except ValueError:
-        print("Value invalid!")
+        return 'Value invalid!'
     except ZeroDivisionError:
-        print('Cannot divide by 0')
+        return 'Cannot divide by 0'
+    else:
+        return (round(BMI,1))

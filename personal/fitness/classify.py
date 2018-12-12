@@ -4,11 +4,7 @@
 #classify.py
 def bmicat(BMI):
     try:
-        if BMI == 0:
-            raise ValueError
-        if type(BMI) == str:
-            raise TypeError
-        elif (BMI > 0 and BMI < 18.5):
+        if (BMI > 0 and BMI < 18.5):
             return 'Underweight'
         elif (BMI >= 18.5 and BMI <= 24.9):
             return 'Healthy'
@@ -18,7 +14,11 @@ def bmicat(BMI):
             return 'Obese'
         elif (BMI >= 35):
             return 'Morbidly Obese'
+        elif (BMI == 0):
+            raise ValueError
+        elif type(BMI) == str:
+            raise TypeError
     except ValueError:
-        print('Invalid BMI')
+        return 'Invalid BMI'
     except TypeError:
-        print('Invalid Data Type')
+        return 'Invalid Data Type'
