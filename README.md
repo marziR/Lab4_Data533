@@ -4,4 +4,7 @@
 
 
 
-try error added for three modules of:identify.age, identify.salary and fitness.classify
+try-exception added for these three modules :
+
+
+  identify.age, identify.salary and fitness.classify
