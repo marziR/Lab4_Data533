@@ -12,8 +12,6 @@ def bmicat(BMI):
             return 'Morbidly Obese'
         elif (BMI == 0):
             raise ValueError
-        elif type(BMI) == str:
-            raise TypeError
     except ValueError:
         return 'Invalid BMI'
     except TypeError:
