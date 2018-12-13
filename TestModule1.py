@@ -1,3 +1,4 @@
+
 import unittest
 from personal.fitness.measure import calc
 
@@ -19,5 +20,5 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc(60,1.76),19)
         self.assertEqual(calc(85,1.88),24)
     @classmethod 
-    def tearDownClass(cls): 
+    def tearDownClass(cls):
         print('teardownClass')  

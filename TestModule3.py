@@ -1,3 +1,4 @@
+        
 import unittest
 from personal.identity.salary import net_annual_salary
 
