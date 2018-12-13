@@ -1,7 +1,7 @@
 
 # Lab4_Data533-master
 
-https://travis-ci.org/marziR/Lab4_Data533.svg?branch=master
+[![Build Status](https://travis-ci.org/marziR/Lab4_Data533.svg?branch=master)](https://travis-ci.org/marziR/Lab4_Data533)
 
 
 
