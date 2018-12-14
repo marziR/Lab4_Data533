@@ -21,4 +21,3 @@ def my_suite():
     runner = unittest.TextTestRunner()
     print(runner.run(suite))
 my_suite()
-

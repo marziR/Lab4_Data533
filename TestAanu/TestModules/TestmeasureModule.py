@@ -5,7 +5,7 @@
 
 
 import unittest
-from personal.fitness.measure import calc
+from measure import calc
 
 
 class TestCalc(unittest.TestCase):

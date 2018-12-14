@@ -5,7 +5,7 @@
 
 
 import unittest
-from personal.identity.salary import net_annual_salary
+from salary import net_annual_salary
 
 
 class TestNetSalary(unittest.TestCase):

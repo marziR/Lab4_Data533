@@ -5,7 +5,7 @@
 
 
 import unittest
-from personal.fitness.classify import bmicat
+from classify import bmicat
 
 
 class TestBmicat(unittest.TestCase):

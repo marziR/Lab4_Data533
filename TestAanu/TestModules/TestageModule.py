@@ -5,7 +5,7 @@
 
 
 import unittest
-from personal.identity.age import calculate_age
+from age import calculate_age
 
 
 class TestAgeCalc(unittest.TestCase):
