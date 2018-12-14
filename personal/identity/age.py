@@ -1,5 +1,9 @@
 from datetime import  datetime
 
+<<<<<<< HEAD
+def calculate_age(DOB):
+    try:
+=======
 def calculate_age(DOB):  
     
     class Error(Exception):
@@ -39,12 +43,27 @@ def calculate_age(DOB):
         return("Day number cant be larger than 31")
         
     else:
+>>>>>>> origin
         currentyear= datetime.today().year
         currentmonth= datetime.today().month
         currentday= datetime.today().day
         bornyear=int(DOB[0:4])
         bornmonth=int(DOB[5:7])
         bornday=int(DOB[8:10])
+<<<<<<< HEAD
+
+        if bornyear > currentyear:
+            raise ValueError
+        if bornmonth > 12:
+            raise ValueError
+        else:
+            age=(currentyear - bornyear - ((currentmonth, currentday) < (bornmonth, bornday)))
+            return age
+
+    except ValueError:
+        return 'Invalid Date!'
+=======
         age=(currentyear - bornyear - ((currentmonth, currentday) < (bornmonth, bornday)))
         return age
     
+>>>>>>> origin
